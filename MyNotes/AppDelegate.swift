@@ -7,9 +7,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        Thread.sleep(forTimeInterval: 1.8)
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:
         // Override point for customization after application launch.
+        [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        Thread.sleep(forTimeInterval: 1.8)
         
         // UISplitViewController presents a master-detail interface for Universal apps.
         let splitViewController = self.window!.rootViewController as! UISplitViewController
