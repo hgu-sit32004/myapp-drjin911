@@ -8,26 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		19515F8E1C8558F800DC2284 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19515F8D1C8558F800DC2284 /* AppDelegate.swift */; };
-		19515F901C8558F800DC2284 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19515F8F1C8558F800DC2284 /* ViewController.swift */; };
 		19515F931C8558F800DC2284 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19515F911C8558F800DC2284 /* Main.storyboard */; };
 		19515F951C8558F800DC2284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19515F941C8558F800DC2284 /* Assets.xcassets */; };
 		19515F981C8558F800DC2284 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19515F961C8558F800DC2284 /* LaunchScreen.storyboard */; };
-		19515FA01C855C7300DC2284 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19515F9F1C855C7300DC2284 /* ToDoItem.swift */; };
-		19515FA21C855D9A00DC2284 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19515FA11C855D9A00DC2284 /* Utils.swift */; };
 		19A79A371C869E270087EEBA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A79A361C869E260087EEBA /* DetailViewController.swift */; };
+		C1A6FDA920C947E3008EF2A6 /* TodoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6FDA820C947E3008EF2A6 /* TodoDetailViewController.swift */; };
+		C1A6FDAB20C948DD008EF2A6 /* NoteLoggerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6FDAA20C948DD008EF2A6 /* NoteLoggerTableViewController.swift */; };
+		C1A6FDAD20C94957008EF2A6 /* NoteLoggerSaveFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6FDAC20C94957008EF2A6 /* NoteLoggerSaveFile.swift */; };
+		C1A6FDAF20C94A25008EF2A6 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6FDAE20C94A25008EF2A6 /* NotesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		19515F8A1C8558F800DC2284 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19515F8D1C8558F800DC2284 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		19515F8F1C8558F800DC2284 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		19515F921C8558F800DC2284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19515F941C8558F800DC2284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19515F971C8558F800DC2284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19515F991C8558F800DC2284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19515F9F1C855C7300DC2284 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
-		19515FA11C855D9A00DC2284 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		19A79A361C869E260087EEBA /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C1A6FDA820C947E3008EF2A6 /* TodoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailViewController.swift; sourceTree = "<group>"; };
+		C1A6FDAA20C948DD008EF2A6 /* NoteLoggerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteLoggerTableViewController.swift; sourceTree = "<group>"; };
+		C1A6FDAC20C94957008EF2A6 /* NoteLoggerSaveFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteLoggerSaveFile.swift; sourceTree = "<group>"; };
+		C1A6FDAE20C94A25008EF2A6 /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +62,12 @@
 		19515F8C1C8558F800DC2284 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				C1A6FDAE20C94A25008EF2A6 /* NotesTableViewController.swift */,
 				19515F8D1C8558F800DC2284 /* AppDelegate.swift */,
-				19515FA11C855D9A00DC2284 /* Utils.swift */,
-				19515F9F1C855C7300DC2284 /* ToDoItem.swift */,
-				19515F8F1C8558F800DC2284 /* ViewController.swift */,
+				C1A6FDAA20C948DD008EF2A6 /* NoteLoggerTableViewController.swift */,
+				C1A6FDA820C947E3008EF2A6 /* TodoDetailViewController.swift */,
 				19A79A361C869E260087EEBA /* DetailViewController.swift */,
+				C1A6FDAC20C94957008EF2A6 /* NoteLoggerSaveFile.swift */,
 				19515F911C8558F800DC2284 /* Main.storyboard */,
 				19515F941C8558F800DC2284 /* Assets.xcassets */,
 				19515F961C8558F800DC2284 /* LaunchScreen.storyboard */,
@@ -105,7 +108,7 @@
 				TargetAttributes = {
 					19515F891C8558F800DC2284 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 44JDRP3T56;
+						DevelopmentTeam = K8LDSQ6F4H;
 						LastSwiftMigration = 0900;
 					};
 				};
@@ -146,11 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19515F901C8558F800DC2284 /* ViewController.swift in Sources */,
+				C1A6FDAD20C94957008EF2A6 /* NoteLoggerSaveFile.swift in Sources */,
+				C1A6FDAB20C948DD008EF2A6 /* NoteLoggerTableViewController.swift in Sources */,
 				19515F8E1C8558F800DC2284 /* AppDelegate.swift in Sources */,
 				19A79A371C869E270087EEBA /* DetailViewController.swift in Sources */,
-				19515FA01C855C7300DC2284 /* ToDoItem.swift in Sources */,
-				19515FA21C855D9A00DC2284 /* Utils.swift in Sources */,
+				C1A6FDA920C947E3008EF2A6 /* TodoDetailViewController.swift in Sources */,
+				C1A6FDAF20C94A25008EF2A6 /* NotesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,9 +273,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = K8LDSQ6F4H;
 				INFOPLIST_FILE = Todo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yigu.Todo;
+				PRODUCT_BUNDLE_IDENTIFIER = noteLogger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -283,9 +288,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = K8LDSQ6F4H;
 				INFOPLIST_FILE = Todo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yigu.Todo;
+				PRODUCT_BUNDLE_IDENTIFIER = noteLogger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
