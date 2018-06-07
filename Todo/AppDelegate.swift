@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  Todo
 //
-//  Copyright © 2016 YiGu. All rights reserved.
 //
 
 import UIKit
