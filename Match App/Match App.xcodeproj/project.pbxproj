@@ -62,10 +62,10 @@
 			children = (
 				C1709E1B20CB8F7A00953CAF /* AppDelegate.swift */,
 				C1709E1D20CB8F7A00953CAF /* ViewController.swift */,
-				C1709E2D20CB989300953CAF /* CardModel.swift */,
-				C1709E2F20CB99A900953CAF /* Card.swift */,
-				C1709E1F20CB8F7A00953CAF /* Main.storyboard */,
 				C1709E3120CB9CC700953CAF /* CardCollectionViewCell.swift */,
+				C1709E2F20CB99A900953CAF /* Card.swift */,
+				C1709E2D20CB989300953CAF /* CardModel.swift */,
+				C1709E1F20CB8F7A00953CAF /* Main.storyboard */,
 				C1709E2220CB8F7B00953CAF /* Assets.xcassets */,
 				C1709E2420CB8F7B00953CAF /* LaunchScreen.storyboard */,
 				C1709E2720CB8F7B00953CAF /* Info.plist */,

@@ -14,4 +14,18 @@ class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var frontImageView: UIImageView!
     
     @IBOutlet weak var backImageView: UIImageView!
+    
+    var card : Card?
+    
+    func sestCard( _ card:Card) {
+        
+        // Keep track of the card that gets passed in
+        self.card = card
+        
+        if card.isMatched == true {
+            
+            
+        }
+    }
+    
 }

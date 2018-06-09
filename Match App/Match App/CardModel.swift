@@ -15,6 +15,7 @@ class CardModel {
         
         // Declare an array to stroe the generated cards
         var generatedCardsArray = [Card]()
+    
         
         // Randomly generate pairs of cards
         for _ in 1...8 {
