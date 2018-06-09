@@ -53,3 +53,6 @@ class CardModel {
     
 }
 
+
+///lecture 9 is done [https://www.youtube.com/watch?v=Mf-SPWFqeJk&index=10&list=PLMRqhzcHGw1YdahNsCLZdSVfNv0stwvdx]
+
