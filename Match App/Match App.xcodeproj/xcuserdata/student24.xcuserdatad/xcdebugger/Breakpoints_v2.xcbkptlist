@@ -10,13 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Match App/CardModel.swift"
-            timestampString = "550214735.385386"
+            timestampString = "550216004.611835"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            endingLineNumber = "53">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
