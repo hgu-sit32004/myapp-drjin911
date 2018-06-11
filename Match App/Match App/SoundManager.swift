@@ -11,7 +11,7 @@ import AVFoundation
 
 class SoundManager {
     
-    var audioPlayer: AVAudioPlayer?
+    static var audioPlayer: AVAudioPlayer?
     
     enum SoundEffect {
         
@@ -22,7 +22,7 @@ class SoundManager {
         
     }
     
-    func playSound(_ effect:SoundEffect){
+    static func playSound(_ effect:SoundEffect){
         
         var soundFilename = ""
         
@@ -41,6 +41,31 @@ class SoundManager {
             
         case .nomatch:
             soundFilename = "dingwrong"
+        }
+        
+        
+        // Get the path to the sound file inside the bundle
+        let bundlePath = Bundle.main.path(forResource: soundFilename, ofType: "wav")
+        
+        guard bundlePath != nil else {
+            print("Coudn't find sound file \(soundFilename) in the bundle")
+            return
+        }
+        // create a url object from thiis sting path
+        let soundURL = URL(fileURLWithPath: bundlePath!)
+        
+        do{
+            //Create audio player object
+            audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+            
+            //play the sound
+            audioPlayer?.play()
+        }
+        catch {
+            // Coudn't create audio player object, log the error
+            
+            print("Coudn't create the audio player object for soundfile \(soundFilename)")
+            
         }
         
     }
