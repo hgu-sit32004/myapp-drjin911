@@ -17,13 +17,10 @@ class ProductsTableViewController: UITableViewController {
         
         products = [
             Product(name: "Hyundai Motors - North Pohang", cellImageName: "image-cell1", fullscreenImageName: "phone-fullscreen1"),
-            Product(name: "Kia Motors - Yangdeok", cellImageName: "image-cell1", fullscreenImageName: "phone-fullscreen1"),
-            Product(name: "Ssangyong Motors - Jangryang", cellImageName: "image-cell1", fullscreenImageName: "phone-fullscreen1"),
-            Product(name: "Student Hall - Hao Hao", cellImageName: "image-cell1", fullscreenImageName: "phone-fullscreen1"),
-            Product(name: "Mom's Kitchen", cellImageName: "image-cell1", fullscreenImageName: "phone-fullscreen1"),
-            Product(name: "Handong Lounge", cellImageName: "image-cell1", fullscreenImageName: "phone-fullscreen1"),
-            Product(name: "InBreeze", cellImageName: "image-cell1", fullscreenImageName: "phone-fullscreen1"),
-            Product(name: "Red Racoon", cellImageName: "image-cell1", fullscreenImageName: "phone-fullscreen1"),
+            Product(name: "Kia Motors - Yangdeok", cellImageName: "image-cell2", fullscreenImageName: "phone-fullscreen2"),
+            Product(name: "Chevrolet - Jangryang", cellImageName: "image-cell3", fullscreenImageName: "phone-fullscreen3"),
+            Product(name: "Ssangyoung - North Pohang", cellImageName: "image-cell4", fullscreenImageName: "phone-fullscreen4"),
+
             
         ]
     }

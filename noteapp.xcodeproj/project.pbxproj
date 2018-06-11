@@ -11,6 +11,7 @@
 		C16F433420CA3A88007998DC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16F433320CA3A88007998DC /* ContactViewController.swift */; };
 		C16F433620CA3A9B007998DC /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16F433520CA3A9B007998DC /* ProductsTableViewController.swift */; };
 		C16F433820CA3AA7007998DC /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16F433720CA3AA7007998DC /* Product.swift */; };
+		C186353D20CE979F00FEE4EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C186353C20CE979F00FEE4EB /* Info.plist */; };
 		C1A6FDCC20C962F3008EF2A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6FDCB20C962F3008EF2A6 /* AppDelegate.swift */; };
 		C1A6FDD120C962F3008EF2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A6FDCF20C962F3008EF2A6 /* Main.storyboard */; };
 		C1A6FDD420C962F3008EF2A6 /* noteapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1A6FDD220C962F3008EF2A6 /* noteapp.xcdatamodeld */; };
@@ -40,13 +41,13 @@
 		C16F433320CA3A88007998DC /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		C16F433520CA3A9B007998DC /* ProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
 		C16F433720CA3AA7007998DC /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		C186353C20CE979F00FEE4EB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1A6FDC820C962F3008EF2A6 /* noteapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noteapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A6FDCB20C962F3008EF2A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1A6FDD020C962F3008EF2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1A6FDD320C962F3008EF2A6 /* noteapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = noteapp.xcdatamodel; sourceTree = "<group>"; };
 		C1A6FDD520C962F4008EF2A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1A6FDD820C962F4008EF2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C1A6FDDA20C962F4008EF2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1A6FDDF20C962F4008EF2A6 /* noteappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = noteappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A6FDEA20C962F4008EF2A6 /* noteappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = noteappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,7 +106,7 @@
 				C1A6FDCF20C962F3008EF2A6 /* Main.storyboard */,
 				C1A6FDD520C962F4008EF2A6 /* Assets.xcassets */,
 				C1A6FDD720C962F4008EF2A6 /* LaunchScreen.storyboard */,
-				C1A6FDDA20C962F4008EF2A6 /* Info.plist */,
+				C186353C20CE979F00FEE4EB /* Info.plist */,
 				C1A6FDD220C962F3008EF2A6 /* noteapp.xcdatamodeld */,
 			);
 			path = noteapp;
@@ -215,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C186353D20CE979F00FEE4EB /* Info.plist in Resources */,
 				C1A6FDD920C962F4008EF2A6 /* LaunchScreen.storyboard in Resources */,
 				C1A6FDD620C962F4008EF2A6 /* Assets.xcassets in Resources */,
 				C1A6FDD120C962F3008EF2A6 /* Main.storyboard in Resources */,
@@ -425,7 +427,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hgu.restaurant;
+				PRODUCT_BUNDLE_IDENTIFIER = hgu.cars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -443,7 +445,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hgu.restaurant;
+				PRODUCT_BUNDLE_IDENTIFIER = hgu.cars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
