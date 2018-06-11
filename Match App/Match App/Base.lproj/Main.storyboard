@@ -21,64 +21,83 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Uyg-dX-eCd">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LPb-DO-V3Y">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HfY-SF-dlb">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tku-cY-xGT">
-                                    <size key="itemSize" width="158" height="224"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCell" id="MT4-XO-rQV" customClass="CardCollectionViewCell" customModule="Match_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card1" translatesAutoresizingMaskIntoConstraints="NO" id="aaA-EC-4Hg">
-                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="hMd-Tg-oht">
-                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
-                                                </imageView>
-                                            </subviews>
-                                        </view>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Remaining: 10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfa-TA-WNv">
+                                        <rect key="frame" x="238.5" y="0.0" width="190" height="30"/>
                                         <constraints>
-                                            <constraint firstItem="aaA-EC-4Hg" firstAttribute="leading" secondItem="MT4-XO-rQV" secondAttribute="leading" id="6bL-e3-4FS"/>
-                                            <constraint firstItem="hMd-Tg-oht" firstAttribute="top" secondItem="MT4-XO-rQV" secondAttribute="top" id="FH2-5x-Owa"/>
-                                            <constraint firstItem="hMd-Tg-oht" firstAttribute="leading" secondItem="MT4-XO-rQV" secondAttribute="leading" id="J96-bj-nBy"/>
-                                            <constraint firstItem="aaA-EC-4Hg" firstAttribute="top" secondItem="MT4-XO-rQV" secondAttribute="top" id="JQM-nS-EKg"/>
-                                            <constraint firstAttribute="trailing" secondItem="hMd-Tg-oht" secondAttribute="trailing" id="gHm-Wg-SHu"/>
-                                            <constraint firstAttribute="bottom" secondItem="aaA-EC-4Hg" secondAttribute="bottom" id="iva-Lr-1UC"/>
-                                            <constraint firstAttribute="trailing" secondItem="aaA-EC-4Hg" secondAttribute="trailing" id="jaM-I3-1N3"/>
-                                            <constraint firstAttribute="bottom" secondItem="hMd-Tg-oht" secondAttribute="bottom" id="zts-aO-2zw"/>
+                                            <constraint firstAttribute="width" constant="190" id="0Q9-X5-4vc"/>
+                                            <constraint firstAttribute="height" constant="30" id="MaB-nL-fjZ"/>
                                         </constraints>
-                                        <connections>
-                                            <outlet property="backImageView" destination="hMd-Tg-oht" id="OxJ-mC-dg3"/>
-                                            <outlet property="frontImageView" destination="aaA-EC-4Hg" id="3l7-6M-MKX"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LPb-DO-V3Y">
+                                        <rect key="frame" x="0.0" y="30" width="667" height="345"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tku-cY-xGT">
+                                            <size key="itemSize" width="158" height="224"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="CardCell" id="MT4-XO-rQV" customClass="CardCollectionViewCell" customModule="Match_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card1" translatesAutoresizingMaskIntoConstraints="NO" id="aaA-EC-4Hg">
+                                                            <rect key="frame" x="0.0" y="0.0" width="158" height="203.5"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="hMd-Tg-oht">
+                                                            <rect key="frame" x="0.0" y="0.0" width="158" height="203.5"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="aaA-EC-4Hg" firstAttribute="leading" secondItem="MT4-XO-rQV" secondAttribute="leading" id="6bL-e3-4FS"/>
+                                                    <constraint firstItem="hMd-Tg-oht" firstAttribute="top" secondItem="MT4-XO-rQV" secondAttribute="top" id="FH2-5x-Owa"/>
+                                                    <constraint firstItem="hMd-Tg-oht" firstAttribute="leading" secondItem="MT4-XO-rQV" secondAttribute="leading" id="J96-bj-nBy"/>
+                                                    <constraint firstItem="aaA-EC-4Hg" firstAttribute="top" secondItem="MT4-XO-rQV" secondAttribute="top" id="JQM-nS-EKg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hMd-Tg-oht" secondAttribute="trailing" id="gHm-Wg-SHu"/>
+                                                    <constraint firstAttribute="bottom" secondItem="aaA-EC-4Hg" secondAttribute="bottom" id="iva-Lr-1UC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aaA-EC-4Hg" secondAttribute="trailing" id="jaM-I3-1N3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="hMd-Tg-oht" secondAttribute="bottom" id="zts-aO-2zw"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="backImageView" destination="hMd-Tg-oht" id="OxJ-mC-dg3"/>
+                                                    <outlet property="frontImageView" destination="aaA-EC-4Hg" id="3l7-6M-MKX"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="LPb-DO-V3Y" firstAttribute="width" secondItem="HfY-SF-dlb" secondAttribute="width" id="dzI-1g-JeF"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="LPb-DO-V3Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="74j-gu-7BC"/>
                             <constraint firstAttribute="trailing" secondItem="Uyg-dX-eCd" secondAttribute="trailing" id="7tt-A9-7DT"/>
                             <constraint firstItem="Uyg-dX-eCd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8Re-rw-xxT"/>
-                            <constraint firstItem="LPb-DO-V3Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DYF-rH-mja"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LPb-DO-V3Y" secondAttribute="trailing" id="Ue8-bT-Hlw"/>
+                            <constraint firstItem="HfY-SF-dlb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BiV-CY-Sdt"/>
+                            <constraint firstItem="HfY-SF-dlb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="DeU-VS-3Jd"/>
                             <constraint firstItem="Uyg-dX-eCd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gUe-sn-csi"/>
+                            <constraint firstItem="HfY-SF-dlb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qQ5-ua-zFc"/>
                             <constraint firstAttribute="bottom" secondItem="Uyg-dX-eCd" secondAttribute="bottom" id="qQc-Jv-4Hi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LPb-DO-V3Y" secondAttribute="bottom" id="znY-0j-M3N"/>
+                            <constraint firstItem="HfY-SF-dlb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yJA-1D-qBd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="LPb-DO-V3Y" id="PeV-SC-wIm"/>
+                        <outlet property="timerLabel" destination="Lfa-TA-WNv" id="pRA-YZ-O0y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

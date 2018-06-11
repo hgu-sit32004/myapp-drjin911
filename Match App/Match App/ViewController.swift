@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var model = CardModel()
@@ -17,15 +18,22 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     var firstFlippedCardIndex:IndexPath?
     
+    var timer:Timer?
+    var milliseconds:Float = 10*1000 // 10seconds
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
+        //Call the getCards method of the card model
+        cardArray = model.getCards()
+
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        //Call the getCards method of the card model
-        cardArray = model.getCards()
+        // Create timer
+        timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(timerElapsed), userInfo: nil, repeats: true)
         
+        RunLoop.main.add(timer!, forMode: .commonModes)
         
     }
 
@@ -33,6 +41,33 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    // MARK: - Timer Methods
+    
+    @objc func timerElapsed(){
+        
+        milliseconds -= 1
+        
+        // Converts to seconds
+        let seconds = String(format: "% .2f", milliseconds/1000)
+        
+        //Set label
+        timerLabel.text = "Time Remaining: \(seconds)"
+        
+        // When the timer has reached 0...
+        
+        if milliseconds <= 0 {
+            
+            //Stop the timer
+            timer?.invalidate()
+            timerLabel.textColor = UIColor.red
+            
+            //Check if there are any cards unmatched
+            checkGameEnded()
+            
+        }
+        
+    }
+    
     
     // MARK: - UICollectionView Protocol Methods
     
@@ -56,6 +91,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //Check if there's any time left
+        if milliseconds <= 0 {
+            return
+        }
+        
         
         // Get the cell that the user selected
         let cell = collectionView.cellForItem(at: indexPath) as! CardCollectionViewCell
@@ -115,6 +155,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             cardOneCell?.remove()
             cardTwoCell?.remove()
             
+            //Check if ther are any cards left unmatched
+            
+            checkGameEnded()
+            
         }
         else {
             
@@ -137,6 +181,62 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Reset the property that tracks the first card flipped
         firstFlippedCardIndex = nil
         
+    }
+    
+    func checkGameEnded(){
+        
+        //Determine if ther are any cards unmateched
+        var isWon = true
+        
+        for card in cardArray {
+            
+            if card.isMatched == false{
+                isWon = false
+                break
+            }
+        }
+        
+        // Messaging variables
+        var title = ""
+        var message = ""
+        
+        // If not then user has won, stop the timer
+        if isWon == true {
+            
+            
+            if milliseconds > 0 {
+                timer?.invalidate()
+                
+            }
+            title = "Congratulations!"
+            message = "You've WON"
+            
+        }
+        else {
+            // If there are unmatched cards, check if ther's any time left
+
+            if milliseconds > 0 {
+                return
+            }
+            
+            title = "Game Over"
+            message = "You've LOST"
+            
+        }
+        
+        // Show won/lost messaging
+        showAlert(title, message)
+        
+    }
+    
+    func showAlert(_ title:String, _ message:String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        alert.addAction(alertAction)
+        
+        present(alert, animated: true, completion: nil)
     }
     
 } // End ViewController class
