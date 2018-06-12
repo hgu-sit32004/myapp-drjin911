@@ -2,19 +2,22 @@
 //  ProductViewController.swift
 //  noteapp
 //
-//  Created by student24 on 2018. 6. 8..
+//  Created by student24 on 2018. 5. 8..
 //  Copyright © 2018년 student24. All rights reserved.
 //
 
 import UIKit
 import MapKit
+import WebKit	
 
 
-class ProductViewController: UIViewController {
+class ProductViewController: UIViewController, WKUIDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet var productImageView: UIImageView!
     @IBOutlet var productNameLabel: UILabel!
+    @IBOutlet weak var websiteView: UIButton!
+    
     
     var product: Product?
     
@@ -37,8 +40,6 @@ class ProductViewController: UIViewController {
         }
     }
     
-    @IBAction func addToCartButtonDidTap(_ sender: AnyObject) {
-        print("Add to cart successfully")
-    }
+    
 }
 

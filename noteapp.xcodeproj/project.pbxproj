@@ -11,7 +11,6 @@
 		C16F433420CA3A88007998DC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16F433320CA3A88007998DC /* ContactViewController.swift */; };
 		C16F433620CA3A9B007998DC /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16F433520CA3A9B007998DC /* ProductsTableViewController.swift */; };
 		C16F433820CA3AA7007998DC /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16F433720CA3AA7007998DC /* Product.swift */; };
-		C186353D20CE979F00FEE4EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C186353C20CE979F00FEE4EB /* Info.plist */; };
 		C1A6FDCC20C962F3008EF2A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6FDCB20C962F3008EF2A6 /* AppDelegate.swift */; };
 		C1A6FDD120C962F3008EF2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A6FDCF20C962F3008EF2A6 /* Main.storyboard */; };
 		C1A6FDD420C962F3008EF2A6 /* noteapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1A6FDD220C962F3008EF2A6 /* noteapp.xcdatamodeld */; };
@@ -216,7 +215,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C186353D20CE979F00FEE4EB /* Info.plist in Resources */,
 				C1A6FDD920C962F4008EF2A6 /* LaunchScreen.storyboard in Resources */,
 				C1A6FDD620C962F4008EF2A6 /* Assets.xcassets in Resources */,
 				C1A6FDD120C962F3008EF2A6 /* Main.storyboard in Resources */,
@@ -423,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8LDSQ6F4H;
 				INFOPLIST_FILE = noteapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,6 +440,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8LDSQ6F4H;
 				INFOPLIST_FILE = noteapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

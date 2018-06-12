@@ -27,6 +27,14 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KqF-cv-fs7">
                                 <rect key="frame" x="0.0" y="815" width="768" height="160"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cm9-Id-OeQ">
+                                <rect key="frame" x="646" y="760" width="102" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Website">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -44,6 +52,7 @@
                     <connections>
                         <outlet property="mapView" destination="KqF-cv-fs7" id="snZ-Sb-VKh"/>
                         <outlet property="productImageView" destination="xqX-NX-Bix" id="vft-6l-CxD"/>
+                        <outlet property="websiteView" destination="Cm9-Id-OeQ" id="rGr-wu-5W9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -153,12 +162,10 @@
                                 <constraint firstAttribute="width" constant="395" id="2lt-Yx-nz9"/>
                                 <constraint firstAttribute="height" constant="187" id="bRj-MU-nTS"/>
                             </constraints>
-                            <string key="text">한동식당 앱은 한동대학교 학부생이 처음으로 
+                            <string key="text">포항 자동차 앱은 한동대학교 학부생이 처음으로 
 iOS어플리케이션 제작을 시도한 앱입니다.
 
-이 앱은 한동대를 처음 온 학생들과 
-게스트 분들이 쉽고 빠르게 교내식당을 
-찾아갈 수 있도록 개발하였습니다.</string>
+이 앱은 포항시 북구 지역에 사는 주민들이 자동차  딜러를 손쉽게 찾아갈 수 있도록 개발하였습니다.</string>
                             <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
@@ -242,11 +249,11 @@ iOS어플리케이션 제작을 시도한 앱입니다.
             </objects>
             <point key="canvasLocation" x="2931" y="360"/>
         </scene>
-        <!--Restaurants-->
+        <!--Car Dealers-->
         <scene sceneID="SrK-bh-l2D">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Co-by-JVQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Restaurants" id="Pib-IN-yzL"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Co-by-JVQ" userLabel="Car Dealers" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Car Dealers" id="Pib-IN-yzL"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ie6-AR-mbp">
                         <rect key="frame" x="0.0" y="20" width="768" height="44"/>

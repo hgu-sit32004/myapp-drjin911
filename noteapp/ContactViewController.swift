@@ -2,7 +2,7 @@
 //  ContactViewController.swift
 //  noteapp
 //
-//  Created by student24 on 2018. 6. 8..
+//  Created by student24 on 2018. 5. 8..
 //  Copyright © 2018년 student24. All rights reserved.
 //
 
@@ -21,12 +21,10 @@ class ContactViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        if #available(iOS 11.0, *) {
-            scrollView.frame = CGRect(x: 0, y: view.safeAreaInsets.top, width: view.frame.width, height: view.frame.height - view.safeAreaInsets.bottom - view.safeAreaInsets.top)
-        } else {
-            scrollView.frame = CGRect(x: 0, y: topLayoutGuide.length, width: view.frame.width, height: view.frame.height - topLayoutGuide.length - bottomLayoutGuide.length)
-        }
+       
+        scrollView.frame = CGRect(x: 0, y: view.safeAreaInsets.top, width: view.frame.width, height: view.frame.height - view.safeAreaInsets.bottom - view.safeAreaInsets.top)
         
-        scrollView.contentSize = CGSize(width: self.view.frame.width, height: 800)
+        
+        scrollView.contentSize = CGSize(width: 768, height: 1500)
     }
 }
