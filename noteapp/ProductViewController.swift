@@ -11,7 +11,7 @@ import MapKit
 import WebKit	
 
 
-class ProductViewController: UIViewController, WKUIDelegate {
+class ProductViewController: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet var productImageView: UIImageView!
@@ -42,4 +42,5 @@ class ProductViewController: UIViewController, WKUIDelegate {
     
     
 }
+
 

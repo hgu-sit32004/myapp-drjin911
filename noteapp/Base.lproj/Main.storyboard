@@ -21,19 +21,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xqX-NX-Bix">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="818"/>
-                            </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KqF-cv-fs7">
                                 <rect key="frame" x="0.0" y="815" width="768" height="160"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cm9-Id-OeQ">
-                                <rect key="frame" x="646" y="760" width="102" height="47"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xqX-NX-Bix">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="818"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wea-8h-QQh">
+                                <rect key="frame" x="663" y="761" width="105" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <state key="normal" title="Website">
-                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
-                                </state>
+                                <state key="normal" title="Website"/>
+                                <connections>
+                                    <segue destination="8Ac-u5-L32" kind="push" id="eur-6y-Ne0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,12 +52,21 @@
                     <connections>
                         <outlet property="mapView" destination="KqF-cv-fs7" id="snZ-Sb-VKh"/>
                         <outlet property="productImageView" destination="xqX-NX-Bix" id="vft-6l-CxD"/>
-                        <outlet property="websiteView" destination="Cm9-Id-OeQ" id="rGr-wu-5W9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3867" y="360"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="0LN-gc-nQ0">
+            <objects>
+                <viewController id="8Ac-u5-L32" userLabel="Web View Controller" customClass="WebviewController" customModule="noteapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ysx-h6-7uI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6uW-6s-Tud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4864" y="360"/>
         </scene>
         <!--About Developer-->
         <scene sceneID="Yc5-Uh-pht">

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1277CC820D2ABAB005B189B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1277CC720D2ABAB005B189B /* WebViewController.swift */; };
 		C16F433220CA3A49007998DC /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16F433120CA3A49007998DC /* ProductViewController.swift */; };
 		C16F433420CA3A88007998DC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16F433320CA3A88007998DC /* ContactViewController.swift */; };
 		C16F433620CA3A9B007998DC /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16F433520CA3A9B007998DC /* ProductsTableViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C1277CC720D2ABAB005B189B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		C16F433120CA3A49007998DC /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		C16F433320CA3A88007998DC /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		C16F433520CA3A9B007998DC /* ProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				C16F433520CA3A9B007998DC /* ProductsTableViewController.swift */,
 				C16F433720CA3AA7007998DC /* Product.swift */,
 				C1A6FDCF20C962F3008EF2A6 /* Main.storyboard */,
+				C1277CC720D2ABAB005B189B /* WebViewController.swift */,
 				C1A6FDD520C962F4008EF2A6 /* Assets.xcassets */,
 				C1A6FDD720C962F4008EF2A6 /* LaunchScreen.storyboard */,
 				C186353C20CE979F00FEE4EB /* Info.plist */,
@@ -246,6 +249,7 @@
 				C16F433420CA3A88007998DC /* ContactViewController.swift in Sources */,
 				C1A6FDCC20C962F3008EF2A6 /* AppDelegate.swift in Sources */,
 				C1A6FDD420C962F3008EF2A6 /* noteapp.xcdatamodeld in Sources */,
+				C1277CC820D2ABAB005B189B /* WebViewController.swift in Sources */,
 				C16F433620CA3A9B007998DC /* ProductsTableViewController.swift in Sources */,
 				C16F433820CA3AA7007998DC /* Product.swift in Sources */,
 			);

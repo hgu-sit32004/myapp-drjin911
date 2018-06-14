@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "noteapp/ProductViewController.swift"
+            timestampString = "550680810.568998"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "ProductViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "noteapp.ProductViewController.product.getter : Swift.Optional&lt;noteapp.Product&gt;"
+                  moduleName = "noteapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/student24/Documents/21600745_final/myapp-drjin911/noteapp/ProductViewController.swift"
+                  timestampString = "550676290.7944191"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "noteapp.ProductViewController.product.setter : Swift.Optional&lt;noteapp.Product&gt;"
+                  moduleName = "noteapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/student24/Documents/21600745_final/myapp-drjin911/noteapp/ProductViewController.swift"
+                  timestampString = "550676290.798131"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "noteapp.ProductViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; noteapp.ProductViewController"
+                  moduleName = "noteapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/student24/Documents/21600745_final/myapp-drjin911/noteapp/ProductViewController.swift"
+                  timestampString = "550676290.800383"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "612">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "noteapp.ProductViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;noteapp.ProductViewController&gt;"
+                  moduleName = "noteapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/student24/Documents/21600745_final/myapp-drjin911/noteapp/ProductViewController.swift"
+                  timestampString = "550676290.813131"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "525">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
